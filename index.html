@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+
+</head>
+<body>
+  <main class="main-container">
+    <img class="logo" src="./images/logo.svg" alt="splitter logo">
+    <div class="container">
+      <div class="display__flex">
+        <section>
+          <label for="bill">Bill</label>
+          <input class="bill--input input__info" type="number" id="bill" name="bill" placeholder="0">
+        </section>
+
+        <section class="tip__selection">
+          <label for="custom-tip">Select Tip %</label>
+          <div class="tip--buttons__selection" id="tip-selection">
+            <button type="button" class="tip-btn">5%</button>
+            <button type="button" class="tip-btn">10%</button>
+            <button type="button" class="tip-btn">15%</button>
+            <button type="button" class="tip-btn">25%</button>
+            <button type="button" class="tip-btn">50%</button>
+            <input type="number" placeholder="Custom" id="custom-tip" class="tip-btn">
+          </div>              
+        </section>
+
+        <section>
+          <div class="div--zero">
+            <label for="people">Number of People</label>
+            <span id="zero" class="zero"></span>
+          </div>
+          <input class="people--input input__info" type="number" id="people" name="people" placeholder="0">
+        </section>
+      </div>
+
+      <div class="display__flex">
+        <section class="section--tip display__flex">
+          <div>
+            <div class="div--tip">
+              <p class="tip--title">Tip Amount<span>/ person</span></p>
+              <p class="tip--result" id="amount-value"></p>
+            </div>
+            <div class="div--tip">
+              <p class="tip--title">Total<span>/ person</span></p>
+              <p class="tip--result" id="total-value"></p>
+            </div>
+          </div>
+          <input type="reset" id="reset" value="reset" class="disabled">
+        </section>
+      </div>
+    </div>  
+  </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/marianaceci" target="_blank">Mariana</a>.
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>
