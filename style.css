@@ -228,7 +228,8 @@ input {
 }
 
 @media (min-width: 1200px) {
-    .container {      
+    .container {  
+        max-width: 756px;    
         padding: 30px;  
         width: 65%;    
         height: auto;    
